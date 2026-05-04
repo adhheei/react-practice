@@ -53,7 +53,7 @@ function App() {
       <h1>Count:{count}</h1>
       <button onClick={()=>setcount(count+1)}>+</button>
       <button onClick={()=>setcount(count-1)}>-</button><br />
-      <button onClick={()=>setcount(0)}>Reset</button>
+      <button onClick={()=>setcount(0)}>Reset button</button>
     </div>
   )
 }
