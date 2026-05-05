@@ -1,6 +1,95 @@
+/* Reset */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Center everything */
+.app-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card */
 .card {
-  border: 1px solid gray;
-  margin: 10px;
-  padding: 15px;
-  border-radius: 8px;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  width: 300px;
+  animation: fadeIn 0.6s ease;
+}
+
+/* Counter */
+.count {
+  font-size: 3.5rem;
+  margin: 20px 0;
+  color: #333;
+  transition: transform 0.2s;
+}
+
+/* Button group */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+/* Buttons */
+button {
+  padding: 10px 18px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Button colors */
+.add {
+  background: #4CAF50;
+  color: white;
+}
+
+.sub {
+  background: #f44336;
+  color: white;
+}
+
+.reset {
+  background: #2196F3;
+  color: white;
+  width: 100%;
+}
+
+/* Hover + click animation */
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Counter bounce effect */
+.count.animate {
+  transform: scale(1.2);
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
